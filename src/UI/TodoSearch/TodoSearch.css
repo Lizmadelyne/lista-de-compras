@@ -27,3 +27,17 @@ font-weight: 400;
 .TodoSearch:disabled{
     opacity:25%;
 }
+
+/*responsive*/
+@media screen and (max-width: 768px){
+    .TodoSearch{
+        font-size: 20px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 480px){
+    .TodoSearch{
+        font-size: 18px;
+        height: 35px;
+    }
+}

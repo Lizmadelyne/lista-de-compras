@@ -8,7 +8,7 @@ function NewTodoPage() {
  
   return (
     <TodoForm
-      label="Escribe tu nuevo TODO"
+      label="Escribe un nuevo elemento en tu lista de compras"
       submitText="Añadir"
       submitEvent= {(text) => addTodo(text)}
     />

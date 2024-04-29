@@ -11,6 +11,7 @@ function App() {
   <HashRouter>
     <Routes>
       <Route path='/' element={<HomePage />}/>
+      <Route path=':slug' element={<HomePage/>}/>
       <Route path='/new' element={<NewTodoPage />}/>
       <Route path='/edit/:id' element={<EditTodoPage/>} />
       <Route path='*' element={<PageNotFound/>}/>
@@ -18,7 +19,7 @@ function App() {
   </HashRouter>
  )
 }
-
+//en el search value es para cambiar el url cuando se busca una tarea
 function PageNotFound() {
   return (
     <div  style={{ display: "inline-block", top:30, left:30}}>
